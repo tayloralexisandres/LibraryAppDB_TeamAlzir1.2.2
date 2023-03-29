@@ -14,7 +14,6 @@ select count(distinct id) from users;
 select * from users;
 
 
-
 -- US 03
 select count(*) from book_borrow
 where is_returned=0;
