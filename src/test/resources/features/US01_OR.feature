@@ -1,7 +1,8 @@
-@us13
+@us01_OR
+
 Feature: As a data consumer, I want the user information are stored in mySql DB correctly in users table.
-
-
+  Background:
+    Given Establish the database connection
   @db
   Scenario: verify users has unique IDs
     When Execute query to get all IDs from users
@@ -9,8 +10,9 @@ Feature: As a data consumer, I want the user information are stored in mySql DB 
 
   @db
   Scenario: verify users table columns
-    When Execute query to get all columns
-    Then verify the below columns are listed in result
+    When Execute query to get all columns.OR
+    Then verify the below columns are listed in result.OR
+
       | id            |
       | full_name     |
       | email         |
