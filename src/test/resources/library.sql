@@ -9,3 +9,6 @@ from users u
 where full_name = 'Test Student 56'
 order by 3 desc;
 
+--DN
+select count(*) from book_borrow where is_returned=0;
+
