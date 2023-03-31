@@ -1,4 +1,4 @@
-@us02_AB
+@us09_AB
 Feature: As a librarian, I want to know borrowed books number
   @ui@db
   Scenario: verify the total amount of borrowed books
